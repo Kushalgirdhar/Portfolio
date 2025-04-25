@@ -1,0 +1,61 @@
+.home{
+    padding: 3rem 5.5rem;
+    justify-content: center;
+}
+.home .text{
+    padding-top: 1rem;
+    width: 45%;
+    margin-right: 2rem;
+}
+.home .text h1{
+    font-size: 4rem;
+}
+.home .image{
+    width: 52%;
+    justify-content: end;
+}
+.home .image img{
+    width: 85%;
+}
+button{
+
+    transition: background-image 0.5s ease-in, transform 0.3s ease-out;
+}
+
+
+@media screen and (max-width:950px) {
+
+    .home .image img{
+    width: 95%;
+}
+}
+
+@media screen and (max-width:850px) {
+    .home{
+        flex-direction: column;
+    
+    }
+    .home .text{
+        width: 100%;
+    }
+    .home .image{
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+        margin-top: 2rem;
+
+    }
+}
+
+@media screen and (max-width:470px) {
+    .home{
+        padding: 1rem;
+    }
+    .home .image{
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        margin-top: 2rem;
+
+    }
+}

@@ -1,0 +1,51 @@
+<div id="contact" class="contact">
+    <h1 class="text-center ">Contact</h1>
+
+    <div class="container">
+
+        <div class="info">
+            <p>I look forward to connecting with you! Whether it’s for a project, feedback, or just to say hello, I’m
+                excited to hear from you. Thank you for visiting my portfolio.</p>
+            <ul>
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=khushpreetsingh2047@gmail.com"
+                    target="_blank"><img [src]="'./images/gmail.webp'" alt="Gmail"></a></li>
+                    <li><a href="https://wa.me/919782322047" target="_blank"><img [src]="'./images/whatsapp.webp'" alt="Whatsapp"></a></li>
+                        <li><a href="https://www.linkedin.com/in/khushpreet-singh-1794b22a7/" target="_blank"><img [src]="'./images/linkedin.webp'" alt="Linkedin"></a>
+                    </li>
+                   
+                    <li><a href="https://github.com/KhushpreetSadal"
+                        target="_blank"><img [src]="'./images/git.webp'" alt="Github"></a></li>
+
+            </ul>
+            <p class="mt-5">I hope we can collaborate soon! Wating for your Message.</p>
+
+        </div>
+
+        <div class="form">
+            <p id="err" *ngIf="errors" class="text-danger">Please Enter Valid {{meassage}}!</p>
+            <p id="err" *ngIf="sucess" class="text-success">Form Submited!</p>
+            <p id="err" *ngIf="wait">Please Wait!</p>
+            
+            
+            <form class="mb-3" #form="ngForm" (submit)="send(form.value,form)">
+
+                <p>Name</p>
+                <input type="text" class="form-control mb-4" ngModel="" name="name" id="exampleFormControlInput"
+                    placeholder="Enter Name Here" required>
+                <p>Email</p>
+                <input type="email" class="form-control mb-4" ngModel="" name="email" id="exampleFormControlInput1"
+                    placeholder="Name@example.com" required>
+                <p>Message</p>
+                <textarea class="form-control mb-4" ngModel="" name="message" placeholder="Your Message"
+                    id="exampleFormControlTextarea1" rows="1" required></textarea>
+                
+                <button class="gBtn"><span class="text-white" *ngIf="!wait">Submit</span><span *ngIf="wait"><img [src]="'./images/load1.gif'"></span></button>
+                
+            </form>
+        </div>
+
+    </div>
+
+
+
+</div>

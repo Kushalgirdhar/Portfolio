@@ -1,0 +1,42 @@
+
+nav{
+    background-color: white;
+}
+.nav{
+    padding: 0rem 5rem;
+}
+.logo{
+    width: 8rem;
+}
+
+.nav-link {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black; 
+    position: relative;
+    transition: all 0.4s ease-in;
+   
+}
+
+
+.nav-link:hover {
+    background: linear-gradient(30deg, #e22de7, #fe386a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: scale(1.05); 
+    transition: all 0.4s ease-in;
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    .nav{
+        padding: 10%;
+    }
+    
+}

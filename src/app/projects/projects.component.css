@@ -1,0 +1,52 @@
+.project{
+    display: flex;
+    padding: 5rem;
+}
+.project .image{
+    width: 50%;
+}
+.project .image img{
+    width: 90%;
+    border-radius: .25rem;
+    box-shadow: 6px 7px 16px -4px rgb(145, 145, 145);
+}
+.project .image .video{
+    width: 90%;
+    border-radius: .25rem;
+}
+.project .desc{
+    width: 50%;
+}
+
+@media screen and (max-width:900px) {
+    .project{
+        flex-direction: column;
+    }
+    .project .image{
+        width: 100%;
+    }
+    .project .image img{
+        width: 100%;
+    }
+    .project .image .video{
+        width: 100%;
+        border-radius: .25rem;
+    }
+    .project .desc{
+        width: 100%;
+        margin-top: 2rem;
+
+    }
+}
+@media screen and (max-width:450px){
+    .project{
+        padding: 8%;
+    }
+    .project .video{
+        width: 100%;
+    }
+    .project .image .video{
+        width: 100%;
+        border-radius: .25rem;
+    }
+}
